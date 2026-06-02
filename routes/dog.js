@@ -4,7 +4,7 @@ const request =require("request");
 
 
 router.get('/',async(req,res) => {
-request('https://yesno.wtf/api?force=yes', function (error, respose, body) {
+request('https://api.thedogapi.com/v1/images/search', function (error, respose, body) {
     if (!error && respose.statusCode == 200) {
         const data = JSON.parse(body);
         res.json(data);

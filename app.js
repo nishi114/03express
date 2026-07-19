@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/hello', helloRouter);
-// app.use('/notes', notesRouter);
+app.use('/notes', notesRouter);
 app.use('/cat', catRouter);
 app.use('/dog', dogRouter);
 app.use('/notes_from_b', notes_from_bRouter);
